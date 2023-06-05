@@ -1,0 +1,96 @@
+.loading {
+  // position: absolute;
+  // top: 200px;
+  // width: 10%;
+
+  margin: auto;
+  transform: translateX(width/50);
+}
+
+.modal-body {
+  position: relative;
+}
+.lds-hourglass {
+  // display: inline-block;
+  // position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  // display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #2b63c7;
+  border-color: #2b63c7 transparent #2b63c7 transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+.addNewCard {
+  .modal-footer {
+    display: flex;
+  }
+  .submit-btn {
+    width: auto;
+    border: none;
+    background-color: #2b63c7;
+    color: white;
+    font-weight: 600;
+  }
+  label {
+    margin-top: 8px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #52535f;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  input,
+  select {
+    background: #ffffff;
+    /* Card subtitle */
+
+    border: 1px solid #8c8c8c;
+    border-radius: 5px;
+    width: 100%;
+    height: 43px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .small-check {
+    width: 17px !important;
+    height: 17px !important;
+    margin-top: 24px !important;
+    margin-right: 12px;
+    margin-left: 12px;
+
+    /* #C6C6C6 */
+
+    background: #c6c6c6;
+    border-radius: 4px;
+  }
+}
