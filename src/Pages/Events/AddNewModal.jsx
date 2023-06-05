@@ -74,7 +74,7 @@ const AddNewModal = (props) => {
       console.log(data);
       props.setTemp(!props.temp);
       setLoading(false);
-      // handleClose();
+      handleClose();
       e.target.reset();
     } catch (err) {
       if (err.response) {

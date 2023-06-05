@@ -16,11 +16,11 @@ const Users = () => {
   const Auth = useContext(UserContext);
 
   useEffect(() => {
-    const pharmacyId = Auth.user.id;
-    axios.get(`/api/orders/pharmacy-orders/${pharmacyId}`).then((res) => {
-      setOrders(res.data.orders);
-      console.log(res.data.orders);
-    });
+    // const pharmacyId = Auth.user.id;
+    // axios.get(`/api/orders/pharmacy-orders/${pharmacyId}`).then((res) => {
+    //   setOrders(res.data.orders);
+    //   console.log(res.data.orders);
+    // });
   }, []);
 
   const deleteProduct = (id) => {
